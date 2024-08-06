@@ -33,7 +33,7 @@ jobs:
 
 
     - name: Build APK
-      run: flutter build apk --release
+      run: flutter build apk --release --stacktrace
 
     # - name: Build APK
     #   run: flutter build apk --debug --split-per-abi
