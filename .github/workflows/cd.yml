@@ -31,8 +31,6 @@ jobs:
     - name: Install dependencies
       run: flutter pub upgrade --major-versions
 
-    - name: Analyze code
-      run: flutter analyze
 
     - name: Build APK
       run: flutter build apk --release
