@@ -23,19 +23,19 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
 
-    - name: Set up Flutter
-      uses: subosito/flutter-action@v2.14.0
-      with:
-        flutter-version: ${{ matrix.flutter-version }}
+  #  - name: Set up Flutter
+  #    uses: subosito/flutter-action@v2.14.0
+   #   with:
+   #     flutter-version: ${{ matrix.flutter-version }}
 
-    - name: Install dependencies
-      run: flutter pub upgrade --major-versions
+  #  - name: Install dependencies
+  #    run: flutter pub upgrade --major-versions
 
-    - name: Clean Flutter build
-      run: flutter clean
+ #   - name: Clean Flutter build
+   #   run: flutter clean
 
-    - name: Build APK
-      run: flutter build apk --release 
+    # - name: Build APK
+    #  run: flutter build apk --release 
 
     # - name: Build APK
     #   run: flutter build apk --debug --split-per-abi
